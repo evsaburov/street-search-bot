@@ -14,7 +14,8 @@ module.exports = () => async (ctx) => {
   try {
     const result = await searchAddress(query, max);
     // console.log(result);
-    return ctx.replyWithMarkdown(result);
+    // return ctx.replyWithMarkdown(result);
+    return ctx.replyWithHTML(result,  {disable_web_page_preview: true });
   } catch (error) {
     // return ctx.reply(error + ' some error');
     return ctx.reply('some error');
