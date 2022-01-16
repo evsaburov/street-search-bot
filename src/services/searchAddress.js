@@ -1,4 +1,5 @@
 const axios = require('axios');
+const { DADATA_API_KEY } = process.env;
 
 module.exports = (query, max) => {
 
@@ -7,8 +8,9 @@ module.exports = (query, max) => {
     url: url,
     headers: {
       "Content-Type": "application/json",
-      "Accept": "application/json"
-    },
+      "Accept": "application/json",
+      "Authorization": "Token " + DADATA_API_KEY
+      },
     data: {
       'query': query,
       'count': max

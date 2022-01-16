@@ -1,6 +1,4 @@
-
 const searchAddress = require('../services/searchAddress');
-const { DADATA_API_KEY } = process.env;
 
 module.exports = () => async (ctx) => {
 
