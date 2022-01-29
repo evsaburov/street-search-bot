@@ -5,7 +5,7 @@ max.enter(ctx => ctx.reply('Укажите, сколько адресов иск
 max.on('text', ctx => {
 
   parsed = parseInt(ctx.message.text);
-  if ( typeof(parsed) !== typeof(10) || parsed > 11 ){
+  if ( !Number.isInteger(parsed) ){
     return ctx.reply('Должно быть указано число, не более 10.');
   }
 
