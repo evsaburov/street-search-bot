@@ -10,7 +10,7 @@ module.exports = (query, max) => {
       "Content-Type": "application/json",
       "Accept": "application/json",
       "Authorization": "Token " + DADATA_API_KEY
-      },
+    },
     data: {
       'query': query,
       'count': max
@@ -18,7 +18,7 @@ module.exports = (query, max) => {
   })
     .then(res => {
       let body = [];
-      
+
       res.data.suggestions.forEach(adr => {
         // console.log(adr);
         mess = `<b>${adr.value}</b>
@@ -35,7 +35,6 @@ module.exports = (query, max) => {
       return ret
     })
     .catch(err => {
-      // console.log(err);
       return err;
     });
 };

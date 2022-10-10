@@ -1,7 +1,18 @@
-# streat-search-bot
-It is a simple telegram bot for search a streat on api https://dadata.ru/
+# street-search-bot
 
-add .env file
-BOT_TOKEN=
-DADATA_API_KEY=
+- Телеграм бот для поиска улиц, на основе api https://dadata.ru/
+- It is a simple telegram bot for search a street on api https://dadata.ru/
 
+- `.env` создать файл в корне проекта.
+- Добавить `BOT_TOKEN` и `DADATA_API_KEY` в .env
+- `npm i` добавить все зависимости.
+- `npm run start` запуск проекта.
+
+## Описание
+
+Бот позволяет искать улицы, по части адреса(улица). Позволяет получить адрес в формате(город/район/улица/дом), а также ФИАС, КЛАДР улицы.
+
+## Команды
+
+- `/max` Количество вариантов ответа по шаблону поиска.
+- `/region` В каком регионе искать. По умолчанию - Челябинская область.
