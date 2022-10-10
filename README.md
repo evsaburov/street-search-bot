@@ -1,7 +1,7 @@
 # street-search-bot
 
-- Телеграм бот для поиска улиц, на основе api https://dadata.ru/
-- It is a simple telegram bot for search a street on api https://dadata.ru/
+Телеграм бот для поиска улиц, на основе api https://dadata.ru/
+It is a simple telegram bot for search a street on api https://dadata.ru/
 
 - `.env` создать файл в корне проекта.
 - Добавить `BOT_TOKEN` и `DADATA_API_KEY` в .env
